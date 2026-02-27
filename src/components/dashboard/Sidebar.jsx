@@ -8,6 +8,7 @@ import { MdLogout } from "react-icons/md";
 import { IoHelpBuoyOutline } from "react-icons/io5";
 
 import { NavLink } from "react-router";
+
 export default function Sidebar() {
   const navLinks = [
     { label: "Dahsboard", icon: MdDashboard, to: "/dashboard" },
@@ -23,9 +24,9 @@ export default function Sidebar() {
     { label: "Logout", icon: MdLogout, to: "/" },
   ];
   return (
-    <div className="bg-base-200 min-h-[calc(100vh-40px)] max-w-48 rounded-3xl p-8">
+    <div className="bg-base-200 min-h-[calc(100vh-40px)] max-w-48 rounded-2xl p-8">
       {/* logo  */}
-      <h2 className="text-lg font-semibold  mb-16">Dashboard</h2>
+      <h2 className="text-lg font-semibold  mb-16">Denezo</h2>
       {/* manu links */}
       <h4 className="uppercase text-sm text-base-content/60 font-medium mt-12 ">
         Manu
