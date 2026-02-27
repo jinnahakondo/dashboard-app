@@ -1,6 +1,24 @@
-import React from "react";
+import { useNavigate } from "react-router";
+import { instance } from "../api/axiosInstance";
 
 export default function LoginForm() {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const loginInfo = {
+      email: e.target.email.value,
+      password: e.target.password.value,
+    };
+
+    const res = await instance.post("/api/login", loginInfo);
+    const token = res?.data?.token;
+    if (token) {
+      localStorage.setItem("token", token);
+      navigate("/dashboard");
+    }
+  };
+
   return (
     <div className="w-full flex flex-col justify-center px-16 py-12 bg-white">
       <h2 className="text-3xl font-semibold mb-6">Welcome back</h2>
@@ -8,13 +26,14 @@ export default function LoginForm() {
         Please enter your details to sign in to your account.
       </p>
 
-      <form  className="space-y-4">
+      <form onSubmit={(e) => handleSubmit(e)} className="space-y-4">
         {/* Email input */}
         <div className="form-control w-full">
           <label className="label">
             <span className="label-text">Email Address</span>
           </label>
           <input
+            name="email"
             type="email"
             placeholder="name@company.com"
             className="input input-bordered w-full"
@@ -31,6 +50,7 @@ export default function LoginForm() {
             </a>
           </label>
           <input
+            name="password"
             type="password"
             placeholder="********"
             className="input input-bordered w-full"
@@ -40,10 +60,7 @@ export default function LoginForm() {
 
         {/* Remember me checkbox */}
         <div className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            className="checkbox checkbox-success"
-          />
+          <input type="checkbox" className="checkbox checkbox-success" />
           <span>Remember for 30 days</span>
         </div>
 

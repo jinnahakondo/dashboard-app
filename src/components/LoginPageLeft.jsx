@@ -2,7 +2,7 @@ import React from "react";
 
 export default function LoginPageLeft() {
   return (
-    <div>
+    <div className="hidden lg:block">
       <div className="w-full h-full bg-green-900 text-white flex flex-col justify-center px-16 py-12">
         <div className="mb-10">
           <h1 className="text-3xl font-bold leading-tight">
