@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 export default function DashBoardHeader() {
   return (
-    <div className="w-full bg-base-200 px-6 py-4 flex items-center justify-between rounded-2xl">
+    <div className="w-full bg-base-200 px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-8 rounded-2xl">
       {/* Left Side - Search */}
       <div className="relative w-full max-w-107 ">
         <input
@@ -13,12 +13,12 @@ export default function DashBoardHeader() {
         />
 
         {/* Search Icon */}
-        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/40">
           <CiSearch size={24} />
         </span>
 
         {/* Shortcut Badge */}
-        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs bg-gray-100 px-2 py-1 rounded-md text-gray-500 border">
+        <span className="absolute right-3 top-1/2 -translate-y-1/2 text-xs bg-gray-100 px-2 py-1 rounded-md text-base-content/70 border">
           ⌘ F
         </span>
       </div>
@@ -37,11 +37,13 @@ export default function DashBoardHeader() {
 
         {/* Profile */}
         <div className="flex items-center gap-3">
-          <img
-            src="https://i.pravatar.cc/40"
-            alt="profile"
-            className="w-10 h-10 rounded-full"
-          />
+          <div className="w-10 h-10 rounded-full">
+            <img
+              src="https://i.pravatar.cc/40"
+              alt="profile"
+              className="w-full h-full rounded-full"
+            />
+          </div>
           <div>
             <p className="font-medium mb-0.5">Totok Michael</p>
             <p className="text-base-content/70 text-xs">tmichael20@mail.com</p>

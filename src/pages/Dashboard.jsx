@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "../components/dashboard/Sidebar";
 import DashBoardHeader from "../components/dashboard/DashboardHeader";
+import DashboardContentHeader from "../components/dashboard/DashBoardContentHeader";
 
 export default function Dashboard() {
   return (
@@ -10,6 +11,11 @@ export default function Dashboard() {
       </aside>
       <div className="w-full">
         <DashBoardHeader />
+        {/* dashboard content  */}
+        <div className="bg-base-200 my-4 p-4 rounded-2xl">
+          {/* dashboard content heaeder  */}
+          <DashboardContentHeader />
+        </div>
       </div>
     </div>
   );
