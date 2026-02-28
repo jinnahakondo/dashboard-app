@@ -1,6 +1,6 @@
 import { PieChart, Pie, ResponsiveContainer } from "recharts";
 
-export default function ProjectProgress() {
+export default function ProductProgress() {
   const completed = 41;
   const inProgress = 25;
   const pending = 100 - completed - inProgress;

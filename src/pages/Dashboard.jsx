@@ -7,7 +7,8 @@ import AnalyticsChart from "../components/dashboard/AnalyticsChart";
 import ReminderCard from "../components/dashboard/ReminderCard";
 import ProductList from "../components/dashboard/ProductList";
 import Team from "../components/dashboard/Team";
-import ProjectProgress from "../components/dashboard/ProjectProgress";
+import ProductProgress from "../components/dashboard/ProductProgress";
+import TimeTracker from "../components/dashboard/TimeTracker";
 
 export default function Dashboard() {
   return (
@@ -48,12 +49,14 @@ export default function Dashboard() {
               </div>
 
               {/* Project progress */}
-              <ProjectProgress />
+              <ProductProgress />
+              {/* time tracker  */}
             </div>
 
             {/* Product list section */}
             <div className="mt-2 xl:mt-0">
               <ProductList />
+              <TimeTracker/>
             </div>
           </div>
         </div>
