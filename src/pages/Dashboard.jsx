@@ -11,9 +11,11 @@ import ProjectProgress from "../components/dashboard/ProjectProgress";
 
 export default function Dashboard() {
   return (
-    <div className="bg-base-100 min-h-screen flex flex-col lg:flex-row">
+    <div className="bg-base-100 min-h-screen flex ">
       {/* Sidebar section */}
-      <Sidebar />
+      <div className="min-h-screen">
+        <Sidebar />
+      </div>
 
       {/* Main dashboard area */}
       <main className="flex-1 p-3 sm:p-4 lg:p-6 overflow-x-hidden">
