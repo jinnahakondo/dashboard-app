@@ -19,8 +19,8 @@ export default function ReminderCard() {
         </p>
 
         {/* Button */}
-        <BtnGradient className={"btn-md w-full"}>
-          <Video size={30} />
+        <BtnGradient className={"btn-sm md:btn-md w-full"}>
+          <Video  />
           Start Meeting
         </BtnGradient>
       </div>
