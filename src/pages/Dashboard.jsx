@@ -5,7 +5,8 @@ import DashboardContentHeader from "../components/dashboard/DashBoardContentHead
 import StatsCards from "../components/dashboard/StatsCards";
 import AnalyticsChart from "../components/dashboard/AnalyticsChart";
 import ReminderCard from "../components/dashboard/ReminderCard";
-import ProjectList from "../components/dashboard/ProjectList";
+import ProductList from "../components/dashboard/ProductList";
+import Team from "../components/dashboard/Team";
 
 export default function Dashboard() {
   return (
@@ -32,9 +33,13 @@ export default function Dashboard() {
                 <AnalyticsChart />
               </div>
               <ReminderCard />
+              <div className="col-span-2">
+                <Team />
+              </div>
+              <div></div>
             </div>
 
-            <ProjectList />
+            <ProductList />
           </div>
         </div>
       </main>
