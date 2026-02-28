@@ -9,6 +9,7 @@ export default function StatsCards() {
       title: "Total Users",
       subtitle: "5+ Increased from last month",
       value: overview.totalUsers,
+      highlight: true,
     },
     {
       title: "Active Users",
