@@ -28,7 +28,7 @@ export default function TimeTracker() {
   };
 
   return (
-    <div className="w-full rounded-2xl p-6 text-white bg-linear-to-br from-green-800 via-green-900 to-black relative overflow-hidden mt-4">
+    <div className="w-full rounded-2xl p-6 text-white bg-linear-to-t to-green-950 from-green-700 relative overflow-hidden mt-4">
       {/* Title */}
       <h2 className="text-lg font-medium">Time Tracker</h2>
 

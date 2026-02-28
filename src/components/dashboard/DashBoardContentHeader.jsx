@@ -23,8 +23,8 @@ export default function DashboardContentHeader() {
         {/* Import data button */}
         <button
           className="btn md:btn-lg bg-transparent border border-[#165436] 
-                           text-[#165436] hover:bg-linear-to-l hover:text-white 
-                           to-[#165436] from-[#1e8054] rounded-full gap-2"
+                           text-[#165436] hover:bg-linear-to-t hover:text-white 
+                           to-green-950 from-green-700 rounded-full gap-2"
         >
           Import Data
         </button>

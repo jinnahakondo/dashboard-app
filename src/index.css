@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+
+/* @plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #154e32;
+  --color-secondary: #217e53;
+ 
+} */
+
 .active{
     @apply text-[#278E5E] relative
 }

@@ -4,7 +4,9 @@ export default function StatsCard({ title, value, subtitle, highlight }) {
   return (
     <div
       className={`card p-5 relative transition ${
-        highlight ? "bg-success text-success-content" : "bg-base-100"
+        highlight
+          ? "bg-linear-to-t to-green-950 from-green-700 text-primary-content"
+          : "bg-base-100"
       }`}
     >
       {/* Card title */}
@@ -14,10 +16,10 @@ export default function StatsCard({ title, value, subtitle, highlight }) {
       <h2 className="text-3xl sm:text-4xl font-bold mt-3">{value}</h2>
 
       {/* Subtitle */}
-      <p className="mt-2 opacity-70">{subtitle}</p>
+      <p className="mt-2 ">{subtitle}</p>
 
       {/* Top-right icon */}
-      <span className="absolute  right-3 top-5 md:right-5 opacity-70 rounded-full bg-base-100 border p-2">
+      <span className="absolute  right-3 top-5 md:right-5 opacity-70 rounded-full bg-base-100 border p-2 text-neutral">
         <ArrowUpRight size={16} />
       </span>
     </div>
