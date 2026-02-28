@@ -11,36 +11,48 @@ import ProjectProgress from "../components/dashboard/ProjectProgress";
 
 export default function Dashboard() {
   return (
-    <div className="bg-base-100 min-h-screen flex">
-      {/* Sidebar */}
+    <div className="bg-base-100 min-h-screen flex flex-col lg:flex-row">
+      {/* Sidebar section */}
       <Sidebar />
 
-      {/* Main content */}
-      <main className="flex-1 p-4 lg:p-6 overflow-x-hidden">
+      {/* Main dashboard area */}
+      <main className="flex-1 p-3 sm:p-4 lg:p-6 overflow-x-hidden">
+        {/* Top header */}
         <DashBoardHeader />
 
-        {/* dashboard content */}
-        <div className="bg-base-200 my-4 p-4 rounded-2xl">
-          {/* dashboard content header */}
+        {/* Content wrapper */}
+        <div className="bg-base-200 my-4 p-3 sm:p-4 rounded-2xl">
+          {/* Content header */}
           <DashboardContentHeader />
 
-          {/* stat cards */}
+          {/* Statistics cards */}
           <StatsCards />
 
-          {/* Middle section */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
-            <div className="lg:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-4">
-              <div className="lg:col-span-2">
+          {/* Middle layout section */}
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 mt-4">
+            {/* Left content area */}
+            <div className="xl:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+              {/* Analytics chart */}
+              <div className="md:col-span-2">
                 <AnalyticsChart />
               </div>
+
+              {/* Reminder card */}
               <ReminderCard />
-              <div className="col-span-2">
+
+              {/* Team section */}
+              <div className="md:col-span-2">
                 <Team />
               </div>
+
+              {/* Project progress */}
               <ProjectProgress />
             </div>
 
-            <ProductList />
+            {/* Product list section */}
+            <div className="mt-2 xl:mt-0">
+              <ProductList />
+            </div>
           </div>
         </div>
       </main>
