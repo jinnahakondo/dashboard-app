@@ -23,7 +23,7 @@ export default function Dashboard() {
           <DashboardContentHeader />
 
           {/* stat cards */}
-          {/* <StatsCards /> */}
+          <StatsCards />
 
           {/* Middle section */}
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4">
