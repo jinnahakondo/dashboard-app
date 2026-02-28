@@ -18,7 +18,7 @@ export default function LoginPageLeft() {
         </p>
       </div>
 
-      {/* Project completion card */}
+      {/* Project card */}
       <div className="bg-green-800 p-4 rounded-lg w-full max-w-md">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-6 h-6 bg-gray-300 rounded-full"></div>
