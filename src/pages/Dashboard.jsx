@@ -7,6 +7,7 @@ import AnalyticsChart from "../components/dashboard/AnalyticsChart";
 import ReminderCard from "../components/dashboard/ReminderCard";
 import ProductList from "../components/dashboard/ProductList";
 import Team from "../components/dashboard/Team";
+import ProjectProgress from "../components/dashboard/ProjectProgress";
 
 export default function Dashboard() {
   return (
@@ -36,7 +37,7 @@ export default function Dashboard() {
               <div className="col-span-2">
                 <Team />
               </div>
-              <div></div>
+              <ProjectProgress />
             </div>
 
             <ProductList />
