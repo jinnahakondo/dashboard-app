@@ -1,4 +1,5 @@
 import { Plus } from "lucide-react";
+import BtnGradient from "../buttons/BtnGradient";
 
 export default function DashboardContentHeader() {
   return (
@@ -11,10 +12,10 @@ export default function DashboardContentHeader() {
       </div>
 
       <div className="flex gap-3">
-        <button className="btn btn-xl bg-linear-to-l to-[#165436] from-[#1e8054] text-white rounded-full gap-2 ">
+        <BtnGradient>
           <Plus size={20} />
           Add Project
-        </button>
+        </BtnGradient>
         <button className="btn btn-xl bg-transparent border border-[#165436] text-[#165436] hover:bg-linear-to-l hover:text-white to-[#165436] from-[#1e8054] rounded-full gap-2 ">
           Import Data
         </button>
