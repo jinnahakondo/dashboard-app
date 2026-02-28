@@ -24,7 +24,7 @@ export default function Sidebar() {
     { label: "Logout", icon: MdLogout, to: "/" },
   ];
   return (
-    <div className="bg-base-200 min-h-[calc(100vh-40px)] max-w-48 rounded-2xl p-8">
+    <div className="bg-base-200 min-h-[calc(100vh-40px)] max-w-48 rounded-2xl p-2 lg:p-8">
       {/* logo  */}
       <h2 className="text-lg font-semibold  mb-16">Denezo</h2>
       {/* manu links */}
