@@ -5,6 +5,7 @@ import DashboardContentHeader from "../components/dashboard/DashBoardContentHead
 import StatsCard from "../components/dashboard/StatsCard";
 import StatsCards from "../components/dashboard/StatsCards";
 import AnalyticsChart from "../components/dashboard/AnalyticsChart";
+import ReminderCard from "../components/dashboard/ReminderCard";
 
 export default function Dashboard() {
   return (
@@ -21,12 +22,14 @@ export default function Dashboard() {
           {/* stat cards */}
           <StatsCards />
           {/* Middle */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-           <div className="col-span-2">
-             <AnalyticsChart />
-           </div>
-            {/* <ReminderCard />
-            <ProjectList /> */}
+          <div className="grid grid-cols-4 gap-4">
+            <div className="col-span-3 gap-4 grid grid-cols-1 lg:grid-cols-3 mt-4">
+              <div className="col-span-2">
+                <AnalyticsChart />
+              </div>
+              <ReminderCard />
+              {/* <ProjectList /> */}
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function DashboardContentHeader() {
       </div>
 
       <div className="flex gap-3">
-        <BtnGradient>
+        <BtnGradient className={'btn-xl'}>
           <Plus size={20} />
           Add Project
         </BtnGradient>

@@ -47,7 +47,7 @@ export default function AnalyticsChart() {
 
   console.log(charData);
   return (
-    <div className="card bg-base-100 mt-4 rounded-2xl">
+    <div className="card bg-base-100 rounded-2xl">
       <div className="card-body">
         <h2 className="font-semibold mb-2">Project Analytics</h2>
 
