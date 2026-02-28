@@ -6,6 +6,7 @@ import StatsCard from "../components/dashboard/StatsCard";
 import StatsCards from "../components/dashboard/StatsCards";
 import AnalyticsChart from "../components/dashboard/AnalyticsChart";
 import ReminderCard from "../components/dashboard/ReminderCard";
+import ProjectList from "../components/dashboard/ProjectList";
 
 export default function Dashboard() {
   return (
@@ -13,7 +14,7 @@ export default function Dashboard() {
       <aside>
         <Sidebar />
       </aside>
-      <div className="w-full">
+      <div className="w-full overflow-x-auto">
         <DashBoardHeader />
         {/* dashboard content  */}
         <div className="bg-base-200 my-4 p-4 rounded-2xl">
@@ -22,14 +23,14 @@ export default function Dashboard() {
           {/* stat cards */}
           <StatsCards />
           {/* Middle */}
-          <div className="grid grid-cols-4 gap-4">
-            <div className="col-span-3 gap-4 grid grid-cols-1 lg:grid-cols-3 mt-4">
+          <div className="grid grid-cols-4 gap-4 mt-4">
+            <div className="col-span-3 gap-4 grid grid-cols-1 lg:grid-cols-3 ">
               <div className="col-span-2">
                 <AnalyticsChart />
               </div>
               <ReminderCard />
-              {/* <ProjectList /> */}
             </div>
+            <ProjectList />
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import BtnGradient from "../buttons/BtnGradient";
 
 export default function ReminderCard() {
   return (
-    <div className=" bg-base-100 rounded-2xl p-5">
+    <div className=" bg-base-100 rounded-2xl p-5 h-fit">
       <div className="">
         {/* Title */}
         <h2 className="font-semibold text-lg mb-6 ">Reminders</h2>
